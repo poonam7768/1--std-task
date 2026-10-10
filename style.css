@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(168, 124, 165);
+}
+h2{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}

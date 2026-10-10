@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Student Form!!!</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="stdform">
+                            <div class="form-group">
+                                <label for="stdfName">Enter first Name:</label>
+                                <input required type="text" id="stdName" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="stdlName">Enter last Name:</label>
+                                <input required type="text" id="stdlName" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="stdqualification">Enter Qualification:</label>
+                                <input required type="text" id="stdqualification" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="stdphone">Enter Contact no.:</label>
+                                <input required type="text" id="stdphone" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="stdemail">Enter Email:</label>
+                                <input required type="text" id="stdemail" class="form-control">
+                            </div>
+
+                                <button type="button" id="addbtn" class="btn btn-sm btn-block btn-primary">Add</button>
+                                <button type="button" id="updatebtn" class="btn btn-sm btn-block btn-secondary d-none">Update</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>sr.no.</th>
+                            <th> First Name</th>
+                            <th> Last Name</th>
+                            <th> Qualification</th>
+                            <th> Contact</th>
+                            <th> Email</th>
+                            <th> Edit</th>
+                            <th> Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="stdcontainer">
+                        <tr>
+                            <td>1</td>
+                            <td>Poonam</td>
+                            <td>D</td>
+                            <td>Bcs</td>
+                            <td>65567789776</td>
+                            <td>pd@gmail.com</td>
+                            <td><button class="btn">Edit</button></td>
+                            <td><button class="btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
